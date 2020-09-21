@@ -3,6 +3,11 @@ language: go
 arch:
   - amd64
   - ppc64le
+  
+include:
+  jobs:
+    - arch: ppc64le
+      dist: bionic
 
 go:
   - 1.2.x
